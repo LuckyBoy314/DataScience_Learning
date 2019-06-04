@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bfb5fd9-bc3d-43c2-9c9d-14e8b4efc6d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Jupyter_Learning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Jupyter_Learning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numpy_notebooks/input and output.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/numpy_notebooks/input and output.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numpy_notebooks/numpy_learning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/numpy_notebooks/numpy_learning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +25,7 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="f09f698e-4052-4f09-8fb6-e9e69f99dc45" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -58,6 +56,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -89,12 +88,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559464144615</updated>
-      <workItem from="1559464195959" duration="635000" />
+      <workItem from="1559464195959" duration="1206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="635000" />
+    <option name="totallyTimeSpent" value="1206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
