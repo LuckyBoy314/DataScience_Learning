@@ -2,6 +2,8 @@ import numpy as np
 
 
 class SimpleLinearRegression1():
+    """循环版本的简单线性回归"""
+    
     def __init__(self):
         self.a_ = None
         self.b_ = None
@@ -49,6 +51,7 @@ class SimpleLinearRegression1():
         
         
 class SimpleLinearRegression2():
+    """向量运算版本的简单线性回归"""
     def __init__(self):
         self.a_ = None
         self.b_ = None
@@ -95,3 +98,6 @@ class SimpleLinearRegression2():
             return  'LinearRegression2() to be fitted'
         else:
             return 'LinearRegression2(a = %s, b = %s)'%(self.a_, self.b_)
+        
+        
+SimpleLinearRegression = SimpleLinearRegression2
