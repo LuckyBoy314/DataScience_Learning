@@ -1,4 +1,5 @@
 import numpy as np
+from .metrics import r2_score
 
 
 class SimpleLinearRegression1():
@@ -92,6 +93,12 @@ class SimpleLinearRegression2():
         
         y_hat = self.a_ * x_single + self.b_
         return y_hat
+    
+    def score(self, x_test, y_test):
+        """根据测试数据集 x_test 和 y_test 确定当前模型的准确度"""
+
+        y_predict = self.predict(x_test)
+        return r2_score(y_test, y_predict)
     
     def __repr__(self):
         if self.a_ is None and  self.b_ is None:
