@@ -1,0 +1,19 @@
+name: bokeh
+
+channels:
+  - bokeh
+  - conda-forge
+
+dependencies:
+  - python=3.6
+  - numpy
+  - notebook
+  - bokeh>=1.2
+  - pandas
+  - scipy
+  - selenium
+  - datashader
+  - networkx
+  - flask
+  - phantomjs
+  - holoviews

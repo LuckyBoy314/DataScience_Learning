@@ -31,13 +31,17 @@ class LinearRegression():
                 return float('inf')
 
         def DJ(theta, Xb, y):
-            n = len(theta)  # 特征个数
-            m = Xb.shape[0]
-            gradient = np.empty(n)
-            gradient[0] = np.sum(Xb@theta - y)
-            for i in range(1, n):
-                gradient[i] = (Xb@theta - y)@Xb[:,i]
-            return gradient*2/m
+            # 循环法：
+            # n = len(theta)  # 特征个数
+            # m = Xb.shape[0]
+            # gradient = np.empty(n)
+            # gradient[0] = np.sum(Xb@theta - y)
+            # for i in range(1, n):
+            #     gradient[i] = (Xb@theta - y)@Xb[:,i]
+            # return gradient*2/m
+            
+            # 向量化计算
+            return Xb.T.dot(Xb.dot(theta) - y)
         
         def gradient_descent(Xb, y, initial_theta, eta, n_iters = 1e4, epsilon=1e-8):
     
@@ -47,7 +51,14 @@ class LinearRegression():
             while i_iter < n_iters:
                 gradient = DJ(theta, Xb, y)
                 last_theta = theta
+                #try:
                 theta = theta - eta * gradient
+                #except RuntimeWarning as e:
+                #    print(e)
+                #    print(eta)
+                #    print(gradient)
+                #    print(theta)
+                    
 
                 if(abs(J(theta, Xb, y) - J(last_theta, Xb, y)) < epsilon):
                     break
