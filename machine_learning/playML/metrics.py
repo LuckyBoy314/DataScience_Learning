@@ -2,6 +2,11 @@ import numpy as np
 
 
 def accuracy_score(y_true, y_predict):
+    """
+    计算分类准确度
+    y_true: 真值
+    y_predict: 预测值
+    """
     assert y_true.shape[0] == y_predict.shape[0], '实际值和预测值长度必须相等'
     return np.sum(y_true == y_predict)/len(y_true)
 
