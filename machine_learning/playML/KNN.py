@@ -20,8 +20,11 @@ def KNN_classify(k, X_train, y_train, x):
 
     return predict_y
 
-# 模拟Scikit-learn中的KNN算法
+
 class KNN_classifier:
+    """
+    模拟Scikit-learn中的KNN算法，即sklearn.neighbors.KNeighborsClassifier
+    """
     def __init__(self, k):
         self.k = k
         self._X_train = None
@@ -34,7 +37,9 @@ class KNN_classifier:
         return self
     
     def _pre(self,x):
-        
+        """
+        对单个待预测x进行预测
+        """
         # 计算x与X_train中各个样本的距离，距离采用欧氏距离
         # 注意广播计算的计算方法
         distances = np.sqrt(np.sum(np.square(self._X_train-x),axis=1))
@@ -51,7 +56,7 @@ class KNN_classifier:
         return predict_y
 
     def predict(self, x_predict): # 注意x_predict是二维矩阵
-        y_predict = [self._pre(x) for x in x_predict]
+        y_predict = [self._pre(x) for x in x_predict]   # numpy数组使用for循环只能对最高纬度进行遍历
         return np.array(y_predict)
     
     def score(self, X_test, y_test):
