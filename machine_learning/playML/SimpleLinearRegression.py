@@ -45,8 +45,8 @@ class SimpleLinearRegression1():
         return y_hat
     
     def __repr__(self):
-        if self.a_ is None and  self.b_ is None:
-            return  'LinearRegression1() to be fitted'
+        if self.a_ is None or self.b_ is None:
+            return  'LinearRegression1() to be  fitted'
         else:
             return 'LinearRegression1(a = %s, b = %s)'%(self.a_, self.b_)
         
